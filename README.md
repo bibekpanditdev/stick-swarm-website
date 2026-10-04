@@ -1,7 +1,7 @@
 # Stick Swarm website - setup & ads guide
 
 ## 1. Replace placeholders (search all files)
-- `https://games.bibekpandit.me`  -> your real domain (index.html, other pages, sitemap.xml, robots.txt)
+- `https://bibekpandit.me`  -> your real domain (index.html, other pages, sitemap.xml, robots.txt)
 - `your@email.com`         -> your real email (contact.html, privacy-policy.html)
 
 ## 2. Deploy (free options)
@@ -10,7 +10,7 @@ Note: GitHub Pages also works. The game uses a non-threaded Godot export, so no 
 
 ## 3. SEO checklist
 1. Open https://search.google.com/search-console, add your domain, verify.
-2. Submit `https://games.bibekpandit.me/sitemap.xml`.
+2. Submit `https://bibekpandit.me/sitemap.xml`.
 3. Use "URL Inspection" -> Request indexing for the homepage.
 4. Do the same in Bing Webmaster Tools.
 5. Share the game on Reddit (r/WebGames, r/playmygame), itch.io, Newgrounds, Crazy Games / Poki submissions to get backlinks.

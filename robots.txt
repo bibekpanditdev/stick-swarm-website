@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /game/
 
-Sitemap: https://games.bibekpandit.me/sitemap.xml
+Sitemap: https://bibekpandit.me/sitemap.xml
