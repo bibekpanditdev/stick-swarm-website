@@ -1,0 +1,47 @@
+:root{--bg:#eef2f8;--card:#fff;--text:#1b2437;--muted:#6b7589;--accent:#1a73e8;--accent-dark:#1459b8;--line:#dde3ee;--radius:18px;--max:1100px}
+/* Want a dark-blue Poki-style look? Swap: --bg:#002b50; --card:#0b3a66; --text:#fff; --muted:#b8c7d9; --line:#1c4d7f */
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.65 "Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+header{background:var(--card);box-shadow:0 1px 6px #0000000f;position:sticky;top:0;z-index:10}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:900;font-size:1.4rem;color:var(--accent);text-decoration:none;letter-spacing:-.5px}
+.logo span{color:var(--text)}
+nav a{margin-left:20px;text-decoration:none;color:var(--text);font-weight:700;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+h1{font-size:clamp(1.4rem,3.5vw,2rem);margin:22px 0 4px;line-height:1.25;font-weight:900}
+h2{margin:0 0 10px;font-size:1.3rem;font-weight:800}
+.sub{color:var(--muted);margin:0 0 16px}
+.player{background:#000;border-radius:var(--radius);overflow:hidden;position:relative;aspect-ratio:16/9;box-shadow:0 6px 24px #1b24371f}
+.player iframe{width:100%;height:100%;border:0;display:none}
+.player.playing iframe{display:block}
+.start{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#dfe9f8 url(og-image.png) center/cover}
+.start>*{position:relative}
+.player.playing .start{display:none}
+.btn{background:var(--accent);color:#fff;border:0;padding:14px 44px;font:inherit;font-size:1.25rem;font-weight:900;border-radius:999px;cursor:pointer;transition:.15s}
+.btn:hover{background:var(--accent-dark);transform:scale(1.04)}
+.start small{color:#fff;background:#0009;padding:4px 12px;border-radius:99px;font-weight:700}
+.bar{display:flex;align-items:center;justify-content:space-between;background:var(--card);border-radius:var(--radius);padding:10px 16px;margin-top:10px}
+.bar b{font-size:1.05rem}
+.bar img{width:36px;height:36px;border-radius:10px;vertical-align:middle;margin-right:10px}
+.btn.small{font-size:.9rem;padding:8px 18px;background:#e6ecf7;color:var(--text)}
+.btn.small:hover{background:#d5deee;transform:none}
+.ad{margin:20px auto;text-align:center;min-height:90px;color:var(--muted);font-size:.8rem}
+section{background:var(--card);border-radius:var(--radius);padding:22px;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.card{background:var(--bg);border-radius:14px;padding:14px 16px}
+.card h3{margin:0 0 4px;font-size:1.02rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+ul{padding-left:20px;margin:0}li{margin:4px 0}
+details{background:var(--bg);border-radius:12px;padding:10px 16px;margin:8px 0}
+summary{cursor:pointer;font-weight:700}
+details p{margin:8px 0 2px;color:var(--muted)}
+footer{margin-top:40px;background:var(--card);padding:22px 0;text-align:center;color:var(--muted);font-size:.9rem}
+footer a{margin:0 10px;color:var(--muted);text-decoration:none;font-weight:700}
+footer a:hover{color:var(--accent)}
+.page{max-width:780px;margin:24px auto;padding:0 16px}
+.page h1{margin-top:0}
+.page>*:not(h1){background:var(--card);border-radius:14px;padding:14px 18px}
+.page h2{background:none!important;padding:8px 0 0!important}
+@media(max-width:600px){nav a{margin-left:12px;font-size:.85rem}section{padding:16px}}

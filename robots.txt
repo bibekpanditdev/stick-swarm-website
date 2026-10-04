@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /game/
+
+Sitemap: https://games.bibekpandit.me/sitemap.xml
