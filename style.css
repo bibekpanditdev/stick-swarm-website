@@ -1,5 +1,4 @@
-:root{--bg:#eef2f8;--card:#fff;--text:#1b2437;--muted:#6b7589;--accent:#1a73e8;--accent-dark:#1459b8;--line:#dde3ee;--radius:18px;--max:1100px}
-/* Want a dark-blue Poki-style look? Swap: --bg:#002b50; --card:#0b3a66; --text:#fff; --muted:#b8c7d9; --line:#1c4d7f */
+:root{--bg:#002b50;--card:#0b3a66;--text:#fff;--muted:#b8c7d9;--accent:#ffc83d;--accent-dark:#e6a800;--line:#1c4d7f;--radius:18px;--max:1100px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;font:16px/1.65 "Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
 a{color:var(--accent)}
@@ -45,3 +44,15 @@ footer a:hover{color:var(--accent)}
 .page>*:not(h1){background:var(--card);border-radius:14px;padding:14px 18px}
 .page h2{background:none!important;padding:8px 0 0!important}
 @media(max-width:600px){nav a{margin-left:12px;font-size:.85rem}section{padding:16px}}
+
+/* games hub tiles */
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.tile{display:block;background:var(--bg);border-radius:14px;overflow:hidden;text-decoration:none;color:var(--text);transition:transform .15s,box-shadow .15s}
+.tile:hover{transform:translateY(-3px);box-shadow:0 10px 24px #0006}
+.tile img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.tile b{display:block;padding:10px 14px 0;font-size:1.05rem}
+.tile span{display:block;padding:2px 14px 14px;color:var(--muted);font-size:.9rem}
+/* fixes: small button keeps dark text on the light fill; header wraps on phones */
+.btn.small{color:#1b2437}
+header .wrap{flex-wrap:wrap;height:auto;padding:10px 16px;gap:6px 0}
+@media(max-width:600px){.logo{font-size:1.2rem}nav a{margin-left:12px}}
